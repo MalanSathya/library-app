@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f5a623;
+  --danger-color: #d0021b;
+  --background-color: #f0f0f0;
+  --text-color: #333;
+  --gradient-color: linear-gradient(to bottom, #f7f7f7, #e5e5e5);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://media.istockphoto.com/id/594484448/vector/books-sketch-seamless.jpg?s=2048x2048&w=is&k=20&c=KjZ_Kr3eH0ljUPqhFnRKtlY1fTOE2zFP-aTw3VUTB0U=');
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* Increased opacity for better text visibility */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Add transition for hover effect */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift slightly on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhance shadow on hover */
+}
+
+.title {
+  color: #000; /* Changed to black for better visibility */
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.book-list {
+  margin-top: 20px;
+}
+
+.book-item {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparency added */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Add transition for hover effect */
+}
+
+.book-item:hover {
+    transform: translateY(-3px); /* Slightly lift the card on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhance shadow on hover */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95); /* Increased opacity for better text visibility */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  color: #333; /* Changed to dark gray for better visibility */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* Increased opacity for better text visibility */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
+}
