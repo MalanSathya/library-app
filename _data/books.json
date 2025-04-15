@@ -34,5 +34,11 @@
     "Authors": "Michael Wittig and Andreas Wittig",
     "Publisher": "Manning Publications",
     "Year": 2023
+  },
+  {
+    "Title": "AWS and Terraform",
+    "Authors": "Malan",
+    "Publisher": "Humber",
+    "Year": "2025"
   }
 ]
